@@ -1,0 +1,31 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-style: double;
+    border-width: 5px;
+}
+
+h1 , h3 {
+    text-align: center;
+}
+
+#citap {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+body {
+    background-color: yellow;
+}
+
+footer {
+    margin-top: 50px;
+}

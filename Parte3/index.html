@@ -19,7 +19,15 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 */
 
 // CREA TU FUNCION MAYUSCULAS aqui:
-
+function mayusculas(noms) {
+    var m;
+    
+    for(var i = 0; i < noms.length; i++)
+    {
+        m = noms[i].toUpperCase();
+        console.log(m);
+    }
+}
 
 
 
@@ -35,7 +43,9 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 
 // CREA TU FUNCION calculateDogAge aqui:
 
-
+function calculateDogAge(ed) {
+    console.log(ed+7);
+}
 
 
 
@@ -64,8 +74,17 @@ fahrenheitToCelsius(95) --> 35
 
 
 // CREA TUS FUNCIONES  aqui:
+function celsiusToFahrenheit(c) {
+    var f;
+    f = c * (9/5) + 32;
+    console.log(f);
+}
 
-
+function fahrenheitToCelsius(fa) {
+    var ce;
+    ce = (fa -32) * (5/9);
+    console.log(ce);
+}
 
 
 
@@ -87,6 +106,15 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+function Dog(name,color,raza){
+    this.name = name;
+    this.color = color;
+    this.raza = raza;
+}
+
+var d1 = new Dog('Zeus','blanco', 'labrador');
+var d2 = new Dog('Toto','negro', 'chihuahua');
+var d3 = new Dog('LiLa','café', 'shit-zhu');
 
 
 /***
@@ -110,6 +138,8 @@ fahrenheitToCelsius(95)
  *        PRUEBA TUS OBJETOS AQUI
  * 
  ***/
+
+ console.log(d1.name,d2.color,d3.raza);
 
 
 </script>
